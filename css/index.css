@@ -93,10 +93,26 @@ div.overlay-text p {
 }
 /* end */
 
+/* table */
+table {
+    color: black;
+    background-color: white;
+    border-radius: 2rem;
+}
+
+#TB {
+    background-color: white;
+}
+/* end */
+
 /* cards */
 .card .card-title {
     font-size: 30px;
     font-weight: 300;
+}
+
+#CT {
+    text-align: left;
 }
 /* end */
 
