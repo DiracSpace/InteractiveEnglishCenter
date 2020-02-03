@@ -70,5 +70,63 @@ div.overlay-text p {
     font-family: "Roboto",sans-serif;
     font-size: 1.25rem;
 }
+/* end */
 
+/* titles */
+#ST {
+    text-align: center;
+    color: white;
+}
+/* end */
+
+/* sections */
+#H {
+    background-color: #b71c1c;
+}
+
+#C {
+    background-color: #e53935;
+}
+
+#M {
+    background-color: #d32f2f;
+}
+/* end */
+
+/* cards */
+.card .card-title {
+    font-size: 30px;
+    font-weight: 300;
+}
+/* end */
+
+/* google map integration */
+#map {
+    height: 600px;
+    width: 100%;
+    background-color: grey;
+}
+/* end */
+
+/* footer */
+#ft {
+    text-align: center;
+}
+
+#F{
+    background-color: #d32f2f;
+}
+
+#R {
+    background-color: #c62828;
+}
+
+#CRF {
+    background-color: #b71c1c;
+}
+
+#BF {
+    border: 2rem;
+    color: white;
+}
 /* end */
