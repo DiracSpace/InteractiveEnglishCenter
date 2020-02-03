@@ -1,0 +1,74 @@
+/* nav brand */
+.logo {
+    display: inline-block;
+    height: 100%;
+}
+
+.logo > img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* end */
+
+/* video header */
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+/* end */
+
+/* video detach */
+html > div[style] {
+    display: none !important;
+}
+/* end */
+
+/* text header */
+div.overlay {
+    position:   absolute;
+    float:  left;
+    width:  auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 30;
+}
+
+div.overlay-text h2 {
+    color: white;
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-size: 4.5rem;
+    padding-top: 3cm;
+    font-weight: 300;
+}
+
+div.overlay-text p {
+    color: white;
+    text-align: center;
+    font-family: "Roboto",sans-serif;
+    font-size: 1.25rem;
+}
+
+/* end */
