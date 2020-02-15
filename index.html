@@ -28,28 +28,28 @@
     </nav>
     <!-- end -->
     <!-- navbar -->
-    <nav class="z-depth-5 navbar red darken-2">
-        <div class="nav-wrapper container">
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li class="logged-in" style="display: none;"><a href="#" class="modal-trigger"
-                        data-target="modal-account">Account</a></li>
-                <li class="logged-in" style="display: none;"><a href="#" class="" id="web-logout">Logout</a></li>
-                <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger"
-                        data-target="modal-signup"><i class="material-icons left">person_add</i>Register</a></li>
-                <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger"
-                        data-target="modal-login"><i class="material-icons left">person</i>Login</a></li>
-            </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <div class="row">
+                <div class="col s12">
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li class="logged-in" style="display: none;"><a href="#" class="" id="web-logout">Logout</a>
+                        </li>
+                        <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger"
+                                data-target="modal-signup"><i class="material-icons left">person_add</i>Register</a>
+                        </li>
+                        <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger"
+                                data-target="modal-login"><i class="material-icons left">person</i>Login</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
-    <ul class="sidenav" id="mobile-demo">
-        <li class="logged-in" style="display: none;"><a href="#" class="modal-trigger"
-                data-target="modal-account">Account</a></li>
-        <li class="logged-in" style="display: none;"><a href="#" class="" id="logout-mobile">Logout</a></li>
-        <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger" data-target="modal-signup"><i
-                    class="material-icons left">person_add</i>Register</a></li>
-        <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger" data-target="modal-login"><i
-                    class="material-icons left">person</i>Login</a></li>
+    <ul id="sidenav-1" class="sidenav sidenav-fixed logged-in" style="display: none;">
+        <li><a class="subheader">Administración de perfil</a></li>
+        <li><a href="https://github.com/dogfalo/materialize/" target="_blank">Github</a></li>
+        <li><a href="https://twitter.com/MaterializeCSS" target="_blank">Twitter</a></li>
+        <li><a href="http://next.materializecss.com/getting-started.html" target="_blank">Docs</a></li>
     </ul>
     <!-- end -->
     <!-- header -->
@@ -212,21 +212,25 @@
                     <div class="col s4">
                         <h5 class="white-text">Nuestra misión</h5>
                         <p class="grey-text text-lighten-4">
-                            Formar profesionales altamente competitivos en el ámbito laboral, capaces de responder en
-                            cualquier reto del desarrollo nacional, con calidad, responsabilidad y compromiso social.
+                            Formar profesionales altamente competitivos en el ámbito laboral, capaces de responder
+                            en
+                            cualquier reto del desarrollo nacional, con calidad, responsabilidad y compromiso
+                            social.
                         </p>
                     </div>
                     <div class="col s4">
                         <h5 class="white-text">Nuestra visión</h5>
                         <p class="grey-text text-lighten-4">
-                            Lograr que nuestros egresados sean competitivos en la aplicación de los idiomas adquiridos
+                            Lograr que nuestros egresados sean competitivos en la aplicación de los idiomas
+                            adquiridos
                             dentro de esa institución.
                         </p>
                     </div>
                     <div class="col s4">
                         <h5 class="white-text">Nuestra visión</h5>
                         <p class="grey-text text-lighten-4">
-                            Lograr que nuestros egresados sean competitivos en la aplicación de los idiomas adquiridos
+                            Lograr que nuestros egresados sean competitivos en la aplicación de los idiomas
+                            adquiridos
                             dentro de esa institución.
                         </p>
                     </div>
@@ -244,13 +248,6 @@
                 </div>
             </div>
         </footer>
-        <!-- end -->
-
-        <!-- show issues -->
-        <div class="container" style="margin-top: 40px;">
-            <ul class="collapsible z-depth-0 issues" style="border: none;">
-            </ul>
-        </div>
         <!-- end -->
 
         <!-- signup modal -->
