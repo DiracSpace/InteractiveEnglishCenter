@@ -28,21 +28,9 @@ const setupUI = (user) => {
     }
 }
 
-const setup = (data) => {
-    if (data.length) {
-        let template = '';
-        data.forEach(doc => {
-            const issue = doc.data();
-            const li = `
-        <li>
-            <div class="collapsible-header grey lighten-4">${issue.Title}</div>
-            <div class="collapsible-body white">${issue.Content}</div>
-        </li>
-        `;
-            template += li
-        });
-        issues.innerHTML = template;
-    } else {
-        issues.innerHTML = `<h5>Inicia sesión para poder interactuar con la página</5>`;
-    }
-}
+$('.button-collapse').sidenav({
+    menuWidth: 300, // Default is 300
+    edge: 'left', // Choose the horizontal origin
+    closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    draggable: true // Choose whether you can drag to open on touch screens
+});

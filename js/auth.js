@@ -4,14 +4,12 @@ auth.onAuthStateChanged(user => {
         M.toast({ html: '¡Bienvenido!', classes: 'rounded' });
         // get data 
         db.collection('Issues').onSnapshot(snapshot => {
-            setup(snapshot.docs);
             setupUI(user);
         }, err => {
             console.log(err.message);
         });
     } else {
         M.toast({ html: 'Sin sesión', classes: 'rounded' });
-        setup([]);
         setupUI(user);
     }
 });
@@ -45,11 +43,13 @@ logout.addEventListener('click', (e) => {
 });
 
 // signout mobile
+/*
 const logout2 = document.querySelector("#logout-mobile");
 logout2.addEventListener('click', (e) => {
     e.preventDefault();
     auth.signOut();
 })
+*/
 
 // login 
 const loginForm = document.querySelector('#login-form');
