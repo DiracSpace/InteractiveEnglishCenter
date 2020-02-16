@@ -20,36 +20,66 @@
 
 <body class="grey lighten-3">
     <!-- image navbar -->
-    <nav class="navbar red darken-4">
-        <div class="nav-wrapper">
-            <a href="#" class="logo"><img class="responsive-img" src="https://i.ibb.co/QjHgN2R/logo-nuevo-1.png"
-                    height="170px" width="160px"></a>
-        </div>
-    </nav>
-    <!-- end -->
-    <!-- navbar -->
-    <nav>
-        <div class="nav-wrapper">
-            <div class="row">
-                <div class="col s12">
-                    <ul id="nav-mobile" class="right hide-on-med-and-down">
-                        <li class="logged-in" style="display: none;"><a href="#" class="" id="web-logout">Logout</a>
-                        </li>
-                        <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger"
-                                data-target="modal-signup"><i class="material-icons left">person_add</i>Register</a>
-                        </li>
-                        <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger"
-                                data-target="modal-login"><i class="material-icons left">person</i>Login</a></li>
-                    </ul>
-                </div>
+    <div class="logged-out" style="display: none;">
+        <nav class="navbar red darken-4">
+            <div class="nav-wrapper">
+                <a href="#" class="logo"><img class="responsive-img" src="https://i.ibb.co/QjHgN2R/logo-nuevo-1.png"
+                        height="170px" width="160px"></a>
             </div>
+        </nav>
+    </div>
+    <!-- end -->
+    <!-- noAuth navbar with mobile collapse -->
+    <nav class="z-depth-5 navbar red darken-2 logged-out" style="display: none;">
+        <div class="nav-wrapper">
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger"
+                        data-target="modal-signup"><i class="material-icons left">person_add</i>Register</a></li>
+                <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger"
+                        data-target="modal-login"><i class="material-icons left">person</i>Login</a></li>
+            </ul>
         </div>
     </nav>
-    <ul id="sidenav-1" class="sidenav sidenav-fixed logged-in" style="display: none;">
+    <ul class="sidenav logged-out" id="mobile-demo" style="display: none;">
+        <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger" data-target="modal-signup"><i
+                    class="material-icons left">person_add</i>Register</a></li>
+        <li class="logged-out" style="display: none;"><a href="#" class="modal-trigger" data-target="modal-login"><i
+                    class="material-icons left">person</i>Login</a></li>
+    </ul>
+    <!-- end -->
+    <!-- Auth navbar with sidenav -->
+    <nav class="z-depth-5 navbar red darken-2 logged-in" style="display: none;"></nav>
+    <ul id="sidenav-1" class="sidenav sidenav-fixed logged-in">
         <li><a class="subheader">Administración de perfil</a></li>
-        <li><a href="https://github.com/dogfalo/materialize/" target="_blank">Github</a></li>
-        <li><a href="https://twitter.com/MaterializeCSS" target="_blank">Twitter</a></li>
-        <li><a href="http://next.materializecss.com/getting-started.html" target="_blank">Docs</a></li>
+        <li>
+            <div class="profilepic"><img src="https://i.ibb.co/pKyBdRk/people3.jpg" alt="Avatar"></div>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#" target="_blank"><i class="material-icons">home</i>Vista general de la cuenta</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#" target="_blank"><i class="material-icons">edit</i>Editar perfil</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#" target="_blank"><i class="material-icons">lock</i>Cambiar contraseña</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#" target="_blank"><i class="material-icons">access_time</i>Ver recibos</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li class="logged-in" style="display: none;">
+            <a href="#" class="" id="web-logout"><i class="material-icons">exit_to_app</i>Logout</a>
+        </li>
+        <li>
+            <div class="divider"></div>
+        </li>
     </ul>
     <!-- end -->
     <!-- header -->
