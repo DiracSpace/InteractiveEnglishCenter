@@ -97,7 +97,7 @@ div.overlay-text p {
 table {
     color: black;
     background-color: white !important;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
 }
 
 #TB {
